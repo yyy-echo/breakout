@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<title>疫情资讯</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+		<!-- meta
+				width = device-width：宽度等于当前设备的宽度
+				height = device-height：高度等于当前设备的高度
+  				initial-scale：初始的缩放比例（默认设置为1.0）
+				minimum-scale：允许用户缩放到的最小比例（默认设置为1.0）
+				maximum-scale：允许用户缩放到的最大比例（默认设置为1.0）   
+				user-scalable：用户是否可以手动缩放（默认设置为no，不希望用户放大缩小页面） -->
+		<!-- css -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/style.css" media="screen"/>
+	</head>
+	
+	<body>
+		<div id="drawer-right">
+			<div class="cross text-right">
+				<a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
+			</div>
+			<h2>导航</h2>
+			<nav>
+				<ul class="nav nav-pills nav-stacked">
+					<li>
+						<a href="#wrapper"><i class="fa fa-home"></i> 首页</a>
+					</li>
+					
+					<li>
+						<a href="#mapData"><i class="fa fa-bookmark"></i> 疫情地图</a>
+					</li>
+					<li>
+						<a href="#inputData"><i class="fa fa-tasks"></i> 境外输入占比</a>
+					</li>
+						<li>
+						<a href="#growthData"><i class="fa fa-wordpress"></i>累计数据</a>
+					</li>
+					
+					<li>
+						<a href="#story"><i class="fa fa-heart"></i> 疫情故事</a>
+					</li>
+				</ul>
+			</nav>
+		</div><!-- #drawer-right -->
+
+		<div id="wrapper">
+		
+			<div id="header" class="content-block header-wrapper">
+				<div class="header-wrapper-inner">
+					<section class="top clearfix">
+						<div class="pull-left">
+							<h1><a class="logo" href="index.html">n-Cov</a></h1>
+						</div>
+						<div class="pull-right">
+							<a class="toggleDrawer" href="#"><i class="fa fa-bars fa-2x"></i></a>
+						</div>
+					</section>
+					<section class="center">
+						<div class="slogan">
+						 这一场没有硝烟的战争，没有谁是局外人
+						</div>
+						<div class="secondary-slogan">
+							等疫情过去了，我们谁也别再说，人间不值得了。
+						</div>
+					</section>
+					<section class="bottom">
+							<img src="assets/images/arrow_down.png" width="100";height="100" alt="图标">
+					</section>
+				</div>
+			</div>
+ 			
+   			 <div class="content-block" id="mapData">
+				<div class="container">
+					<header class="block-heading cleafix">
+					 <section id="main" style="margin:0 auto">
+						<iframe src="china-map.html" style="width: 1200px; height:600px;"></iframe>
+			    	 </section>
+					</header>
+				</div>
+			</div>
+		
+			<div class="content-block parallax" id="inputData">
+			  <div class="container text-center">
+					<h1>境外输入及占比数据</h1>
+					<section id="mainOne" style="margin:0 auto">
+						<iframe src="pie(1).html" style="width:850px; height:550px;margin-left: -600px"></iframe>
+	    	    </section>
+					<section id="mainTwo" style="margin:0 auto">
+						<iframe src="pie(2).html" style="width: 800px; height:450px;margin-right: -300px"></iframe>
+	    	    </section>
+				</div>
+				<!--<div class="content-block parallax">
+				<div class="container text-center">
+				 
+			</div>
+				</div>-->
+		</div>
+ 			<div class="content-block" id="growthData">
+				<div class="container">
+					<header class="block-heading cleafix">
+					<section id="main-1" style="margin:0 auto">
+						<iframe src="line.html" style="width: 1200px; height:600px;"></iframe>
+			    	  </section>
+					</header>
+				</div>
+			</div>
+		
+			<div class="content-block parallax" id="services">
+				<div class="container text-center">
+					<header class="block-heading cleafix">
+						<h1>最美逆行者</h1>
+						<p>没有从天而降的英雄，只有挺身而出的平凡人</p>
+						<p>待凌冬离去，雪融草青，相信一定会有新的相逢将温暖延续</p>
+						<p>总有那么一句话，一个人，一个故事温暖你心间&hearts;&hearts;&hearts;</p>
+					</header>
+			</div>	 
+ 			<div class="content-block" id="story">
+				<div class="container">
+					<i class="fa fa-heart-o"></i><header class="block-heading cleafix">
+						<h1>人间自有温情在</h1>
+					</header>
+				  <section class="block-body">
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#" class="recent-work" style="background-image:url(assets/images/01.jpg)">
+								<p>95后护士莎莎</p>
+								<p>我和其他护士不一样，我是汶川人!</p>
+								<p>“到现在我的家人都不知道我在干嘛，如有不幸，捐献我的遗体做研究攻破病毒，请大家也不要告诉我的父母，唯一的要求请妥善安排我的家人。我虽然工作能力不强，但是关键时刻不会做逃兵。”</p>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#" class="recent-work" style="background-image:url(assets/images/01.jpg)">
+								<p>最美光头女护士-武汉90后护士单霞</p>
+								<p>头发没了可以再长，首要问题是保护好自己同时，尽量救治更多人。</p>
+									<br>
+								<p>“武汉的很多医护人员超负荷应对疫情，一周每天只睡两个小时，直到医护人员赶到后，压力才有所缓解。”</p>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#" class="recent-work" style="background-image:url(assets/images/01.jpg)">
+								<p>高岚：守护生命，坚持</p>
+								<p>“看到武汉的第一眼，我流泪了”</p>
+								<p>高岚作为曾经在抗击非典和汶川地震救援一线历练国内的“老兵”，当疫情到来时，她义无反顾走在抗战的最前线。</p>
+								<p>一定要把我的孩子们,这每一个平平安安地带回来，一个也不能少。</p>
+								</a>
+							</div>
+							</div>
+						  <div class="row">
+							<div class="col-sm-4">
+								<a href="#" class="recent-work" style="background-image:url(assets/images/01.jpg)">
+								<p>"因本人不能出力，请转支持继续帮助的人"</p>
+									<br>
+								<p>何荣富，81岁，江津区朱杨镇退休支部书记。一天，江津区朱杨镇政府机关办公室收到一个信封，里面有2000元钱。何荣富表示自己年龄大了，不能出力，这2000元钱捐给疫情灾区。在没有捐款前，她多次向镇政府请战，希望能为阻击疫情贡献一份力量。但是，考虑到年龄较大，属于易感人群，工作人员一次次婉拒了她的请求。但是，何荣富没有放弃，继续通过电话、微信群等方式，叮嘱周围老人提高防治意识，配合政府做好疫情防控工作。</p>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#" class="recent-work" style="background-image:url(assets/images/01.jpg)">
+								<p>人民解放军驰援武汉，火神山医院交付部队</p>
+								<p>经中央军委主席习近平批准，1400名人民解放军医护人员于2月2日集结，奔赴武汉疫情第一线。陆军军医大学、海军军医大学、空军军医大学先期抵达的450人，加上联勤保障部队所属医院抽组的950人，还有从解放军疾病预防控制中心、军事科学院军事医学研究院抽调的15名专家，全部赶赴疫情第一线开展紧张有序的工作。其中，不少医护人员曾经在小汤山医院抗击非典，在塞拉利昂、利比里亚抗击过埃博拉。他们是最可爱的人，使人由衷赞叹，从内心深处发起敬佩之心。</p>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#" class="recent-work" style="background-image:url(assets/images/01.jpg)">
+								<p>在最危险的地方再站好这班岗</p>
+								<p>张胜林，55岁，武汉协和医院发热门诊的联络员。</p>
+								<p>老张是一名退伍老兵，在患者非常多的协和医院发热门诊担任联络员。可以想象，张胜林非常忙碌，也非常危险。稍微不注意，就有可能感染病毒。但是，老张没有退缩，没有抱怨。他每天接待社区居民几十人，舍不得脱防护服，不敢喝水，自备的午饭让给快饿晕的患者。张胜林选择在最危险的地方站好这班岗。作为一名青年学生尤其是大学生，应该向张胜林大爷学习，向张胜林大爷致敬。</p></a>
+							</div>
+						</div>
+				  </section>
+				</div>
+			</div>
+		</div><!--/#wrapper-->
+	<footer>数据来源：国家及各地区卫健委卫健委/数据截止记录仅为2020.7.3日/关于我们</footer>
+		<script src="assets/js/jquery-2.1.3.min.js"></script>
+		<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.actual.min.js"></script>
+		<script src="assets/js/jquery.scrollTo.min.js"></script>
+		<script src="assets/js/script.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>疫情趋势</title>
+ <style>
+    #myEcharts {
+      width: 1100px;
+      height: 500px;
+      margin: 0 auto;
+    }
+	</style>
+	  <script src="https://www.echartsjs.com/examples/vendors/echarts/echarts.min.js?_v_=1578305236132"></script>
+</head>
+
+<body>
+	<div id="myEcharts"></div>
+	<script>
+	   //初始化echarts实例
+    var myChart = echarts.init(document.getElementById('myEcharts'));
+    // 指定图表的配置项和数据
+	option = {
+    title: {
+        text: '疫情趋势'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data: ['累计死亡', '累计确诊', '累计治愈', ]
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['1.27', '2.9', '3.4', '4.2', '5.2', '6.14', '7.3']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+            name: '累计死亡',
+            type: 'line',
+            stack: '总量',
+            data: [106, 909, 3015, 334, 3331, 4645, 4684]
+        },
+        {
+            name: '累计确诊',
+            type: 'line',
+            stack: '总量',
+            data: [4535, 40235, 80565, 2686, 84393, 84778, 85287]
+        },
+        {
+            name: '累计治愈',
+            type: 'line',
+            stack: '总量',
+            data: [60, 3283, 52109, 154, 76785, 79913, 80117]
+        },  
+    ]
+};
+		   //使用指定的配置项和数据显示图表
+    myChart.setOption(option);
+	</script>
+</body>
+</html>
+
+

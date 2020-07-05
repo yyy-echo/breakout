@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>全国现有确诊构成</title>
+ <style>
+    #myEcharts {
+      width: 800px;
+      height: 500px;
+      margin: 0 auto;
+	 border；1px solid red;color: rgba(255,255,255,1.00)
+    }
+	</style>
+	  <script src="https://www.echartsjs.com/examples/vendors/echarts/echarts.min.js?_v_=1578305236132"></script>
+</head>
+
+<body>
+	<div id="myEcharts"></div>
+	<script>
+	   //初始化echarts实例
+    var myChart = echarts.init(document.getElementById('myEcharts'));
+    // 指定图表的配置项和数据
+	option = {
+
+    title: {
+        text: '全国现有确诊构成',
+        left: 'center',
+        top: 20,
+        textStyle: {
+            color: '#ccc'
+        }
+    },
+
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+
+    visualMap: {
+        show: false,
+        min: 100,
+        max: 600,
+        inRange: {
+            colorLightness: [0, 1]
+        }
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '50%'],
+            data: [
+                {value: 111, name: '港澳台病例'},
+                {value: 68, name: '境外输入'},
+                {value: 335, name: '31省本土病例'},
+            ].sort(function (a, b) { return a.value - b.value; }),
+            roseType: 'radius',
+            label: {
+                color: '#fff'
+            },
+            labelLine: {
+                lineStyle: {
+                    color: '#fff'
+                },
+                smooth: 0.2,
+                length: 30,
+                length2: 30
+            },
+            itemStyle: {
+                color: '#c23531',
+                shadowBlur: 200,
+                shadowColor: 'rgba(255,255,255,0.8)'
+            },
+
+            animationType: 'scale',
+            animationEasing: 'elasticOut',
+            animationDelay: function (idx) {
+                return Math.random() * 200;
+            }
+        }
+    ]
+};
+		   //使用指定的配置项和数据显示图表
+    myChart.setOption(option);
+	</script>
+</body>
+</html>
+
+
